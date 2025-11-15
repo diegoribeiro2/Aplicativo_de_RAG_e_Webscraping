@@ -1,88 +1,78 @@
 # 📚 Docstóteles - IA SEMPRE ATUALIZADA (Web Scraping + RAG)
 
-Transforme qualquer documentação em um assistente de IA atualizado!  
-Crie um chat que responde sobre qualquer tecnologia, usando scraping inteligente e RAG, com ferramentas 100% gratuitas.
+[![Python](https://img.shields.io/badge/Python-3.11-blue)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.24-orange)](https://streamlit.io/)
+[![OpenAI](https://img.shields.io/badge/OpenAI-API-red)](https://openai.com/pt-BR/api/)
+[![LangChain](https://img.shields.io/badge/LangChain-RAG-green)](https://python.langchain.com/)
+[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
-## ✨ O que é o Docstóteles?
+Transforme qualquer documentação em um **assistente de IA atualizado**!  
+Crie um chat que responde sobre qualquer tecnologia, usando scraping inteligente e RAG, com ferramentas **100% gratuitas**.
 
-O Docstóteles é uma aplicação que junta Web Scraping inteligente (Fire Crawl) com RAG (LangChain + Groq) para criar um assistente de IA que conhece qualquer documentação da web.  
-Você cola o link de uma documentação (Django, React, Vue, etc), o app baixa tudo, indexa e cria um chat para perguntas e respostas super atualizadas.
+---
+
+## 🎯 Sobre o Projeto
+
+O Docstóteles combina **Web Scraping inteligente (Fire Crawl)** com **RAG (LangChain + Groq)** para criar um assistente de IA que conhece qualquer documentação da web.  
+
+Funciona assim:
+
+1. Cole o link de uma documentação (React, Django, Vue, Streamlit, etc.).  
+2. O app coleta todo o conteúdo e transforma em **conhecimento estruturado**.  
+3. Pergunte qualquer coisa no chat, e o Docstóteles responde usando o conteúdo real da web!  
+
+Este projeto mostra na prática como combinar **scraping, LLMs, embeddings e busca vetorial**, ideal para criar **assistentes de conhecimento, bots de suporte técnico ou ferramentas de aprendizado interno**.
+
+---
 
 ## 🚀 Tecnologias Usadas
 
-- [Streamlit](https://streamlit.io/) — Interface gráfica
-- [Fire Crawl](https://firecrawl.dev/) — Web Scraping inteligente
-- [Open API](https://openai.com/pt-BR/api/) — LLM
-- [LangChain](https://python.langchain.com/) — RAG e embeddings
-- [Hugging Face](https://huggingface.co/) — Embeddings
-- [FAISS](https://github.com/facebookresearch/faiss) — Vector store
-
-## 🛠️ Instalação
-
-1. **Clone o repositório:**
-   ```bash
-   git clone https://github.com/asimov-academy/video-docstoteles-material.git
-   cd video-docstoteles-material
-   ```
-
-2. **Crie e ative um ambiente virtual (recomendado):**
-   ```bash
-   python3 -m venv .venv
-   source .venv/bin/activate
-   ```
-   > No Windows, use: `.venv\Scripts\activate`
-
-3. **Instale as dependências:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Configure as chaves de API:**
-   - Crie um arquivo `.env` na raiz do projeto e preencha com suas chaves:
-     ```
-     GROQ_API_KEY=sua_chave_groq
-     FIRECRAWL_API_KEY=sua_chave_firecrawl
-     FIRECRAWL_API_URL=url_firecrawl
-     ```
-
-5. **Crie as pastas necessárias:**
-   ```bash
-   mkdir -p data/collections
-   ```
-
-## 🏃‍♂️ Como rodar
-
-```bash
-streamlit run docstoteles/app.py
-```
-
-Acesse o app no navegador pelo link que aparecer no terminal.
+- [Streamlit](https://streamlit.io/) — Interface gráfica interativa  
+- [Fire Crawl](https://firecrawl.dev/) — Web Scraping inteligente  
+- [OpenAI API](https://openai.com/pt-BR/api/) — LLM para geração de respostas  
+- [LangChain](https://python.langchain.com/) — RAG e embeddings  
+- [Hugging Face](https://huggingface.co/) — Embeddings de alta qualidade  
+- [FAISS](https://github.com/facebookresearch/faiss) — Armazenamento e busca vetorial  
 
 ---
 
-## 📝 Como usar
+## 🖼️ Demonstração
 
-### 1. Scraping
-
-- Vá para o modo "Scraping" na barra lateral.
-- Cole a URL da documentação (ex: https://docs.streamlit.io).
-- Dê um nome para a coleção.
-- Clique em "Iniciar Scraping".
-- Aguarde o download dos arquivos.
-
-### 2. Chat
-
-- Selecione o modo "Chat" na barra lateral.
-- Escolha a coleção que você criou.
-- Pergunte qualquer coisa sobre a documentação!
+![Exemplo de uso](https://media.giphy.com/media/your-gif-placeholder/giphy.gif)  
+*GIF mostrando scraping e chat funcionando em tempo real*  
 
 ---
 
-## 🌐 Sugestões de sites para testar
+## 📝 Como Usar
 
-- https://docs.streamlit.io
-- https://python.langchain.com/docs
-- https://docs.python.org/3/tutorial
+### 1️⃣ Scraping
+
+1. Vá para o modo **"Scraping"** na barra lateral.  
+2. Cole a URL da documentação (ex: [https://docs.streamlit.io](https://docs.streamlit.io)).  
+3. Dê um nome para a **coleção**.  
+4. Clique em **"Iniciar Scraping"**.  
+5. Aguarde o download e indexação dos arquivos.  
+
+> O scraping baixa até 10 páginas por padrão — você pode ajustar este limite no código.
+
+### 2️⃣ Chat
+
+1. Selecione o modo **"Chat"** na barra lateral.  
+2. Escolha a coleção que você criou.  
+3. Pergunte qualquer coisa sobre a documentação — o Docstóteles responde usando o conteúdo real da web!  
+
+---
+
+## 🌐 Sites para Testar
+
+- [Streamlit Docs](https://docs.streamlit.io)  
+- [LangChain Docs](https://python.langchain.com/docs)  
+- [Python Tutorial](https://docs.python.org/3/tutorial)  
+
+---
+
+## 📦 Estrutura do Projeto
+
 
 ---
 
@@ -99,42 +89,15 @@ docstoteles/
     rag.py
 data/
   collections/
-requirements.txt
 README.md
-.env (você deve criar)
+.env
 ```
 
 ---
 
 ## 💡 Dicas
 
-- O projeto é base: você pode expandir, conectar outros modelos, adicionar uploads, etc.
-- Fire Crawl e Groq são gratuitos (Groq não pede cartão).
+- O projeto pode expandir, conectar outros modelos, adicionar uploads, etc.
+- Fire Crawl é gratuitos (não pede cartão).
 - O scraping baixa até 10 páginas por padrão (ajuste no código se quiser mais).
-
----
-
-## 🧑‍💻 Contribua!
-
-Sugestões, issues e PRs são bem-vindos!
-
----
-
-# 🚦 Passo a Passo Docstóteles
-
-## 1️⃣ Setup Básico
-
-### 1.1 Instale as dependências
-
-```bash
-pip install streamlit python-dotenv openai firecrawl langchain langchain-community langchain-openai faiss-cpu sentence-transformers
-```
-
-### 1.2 Crie o arquivo `.env`
-
-```env
-OPEN_API_KEY=sua_chave_openai
-FIRECRAWL_API_KEY=sua_chave_firecrawl
-FIRECRAWL_API_URL=url_firecrawl
-```
 
