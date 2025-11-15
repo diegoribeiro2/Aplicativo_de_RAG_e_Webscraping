@@ -16,6 +16,10 @@ O Docstóteles é uma aplicação que combina **Web Scraping inteligente (Fire C
 
 Funciona assim: você cola o link de uma documentação (como Django, React, Vue, Streamlit, etc.), o app coleta todo o conteúdo, organiza e transforma em **conhecimento estruturado**, e cria um chat para perguntas e respostas em tempo real — respondendo como se fosse um expert no assunto.
 
+![Docstoteles 01](docstoteles01.png)
+
+![Docstoteles 02](docstoteles02.png)
+
 Este projeto vai além da teoria e mostra na prática como combinar:
 
 - **Web Scraping** para coletar informações diretamente da fonte.  
