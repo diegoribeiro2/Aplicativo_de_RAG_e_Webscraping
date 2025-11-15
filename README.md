@@ -5,6 +5,7 @@ Crie um chat que responde sobre qualquer tecnologia, usando scraping inteligente
 
 Com o projeto Docstóteles, você vai aprender a criar um assistente de IA capaz de responder perguntas sobre qualquer tecnologia diretamente a partir da documentação oficial — e o melhor: sempre com informações atualizadas.
 
+
 ---
 
 ## ✨ O que é o Docstóteles?
@@ -82,7 +83,7 @@ README.md
 
 ---
 
-## 💡 Dicas e EPossíveis xpansões
+## 💡 Dicas e Possíveis xpansões
 
 - O projeto pode ser expandido para suportar **uploads de documentos, PDFs**, ou até integração com outros modelos de IA.  
 - **Fire Crawl** é totalmente gratuito e não pede cartão de crédito.  
