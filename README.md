@@ -1,5 +1,7 @@
 # 📚 Docstóteles - IA SEMPRE ATUALIZADA (Web Scraping + RAG)
 
+🔗 **Acesse o aplicativo aqui:** [diego-docstoteles.streamlit.app](https://diego-docstoteles.streamlit.app/)
+
 Transforme qualquer documentação em um **assistente de IA atualizado**!  
 Crie um chat que responde sobre qualquer tecnologia, usando scraping inteligente e RAG, com ferramentas **100% gratuitas**.
 
